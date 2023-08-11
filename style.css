@@ -1,0 +1,238 @@
+/* blue color #000f36 */
+ /* yellow color #fdd143 */
+/* light blur colour #3efeff */
+@font-face {
+    font-family: Cosima;
+    src: url(fonts/cosima/CosimaTrial-Thin.otf)format("opentype");
+}
+
+@font-face{
+  font-family: Gemsbuck;
+  src: url(fonts/gemsbuck-01-thin/Gemsbuck\ 01\ Thin.otf)format("opentype");
+}
+
+@import url(https://db.onlinewebfonts.com/c/e9e07f977067124416ea387033678909?family=Colon+Mono+W01+Light);
+@font-face {
+    font-family: "Colon Mono W01 Light";
+    src: url("https://db.onlinewebfonts.com/t/e9e07f977067124416ea387033678909.eot");
+    src: url("https://db.onlinewebfonts.com/t/e9e07f977067124416ea387033678909.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/e9e07f977067124416ea387033678909.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/e9e07f977067124416ea387033678909.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/e9e07f977067124416ea387033678909.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/e9e07f977067124416ea387033678909.svg#Colon Mono W01 Light")format("svg");
+}
+
+body{
+    margin: 0;
+}
+
+.bg_blue{
+    background-color: #000f36;
+}
+
+.bg_yellow{
+    background-color: #fdd143;
+}
+
+.navbar {
+    /* background-color: #000; */
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    font-family: Cosima;
+    
+    /* color: black; */
+    /* color: grey; */
+    
+  }
+  
+  .navbar-container {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .navbar-logo img {
+    width: 100px; /* Adjust the width as per your logo size */
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  
+  .navbar-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-item {
+    margin-left: 60px;
+  }
+  
+  .navbar-item:first-child {
+    margin-left: 0;
+  }
+  
+  .navbar-item a {
+    font-size: 16px;
+    /* color: #fff; */
+    color: gray;
+    text-decoration: none;
+  }
+  
+  .navbar-item a:hover {
+    color: white;
+    transition: 0.25s;
+  }
+
+  .banner_img img{
+    width: 100%;
+  }
+
+  .w_i_tbf{
+    font-family: "Colon Mono W01 Light";
+    padding: 50px;
+    gap: 20px;
+    font-size: 25px;
+  }
+
+  .up_aop{
+    font-family: "Colon Mono W01 Light";
+    padding: 50px;
+    font-size: 25px;
+  }
+
+  .witbf_ans{
+    font-size: 17px;
+  }
+
+  .bg_dark_gray{
+    background-color: #5f6062;
+  }
+
+  .bg_light_gray{
+    background-color: #838788;
+  }
+
+  .flex{
+    display: flex;
+  }
+
+  .fw{
+    color: white;
+  }
+
+  .p25{
+    padding: 25px;
+  }
+
+  .l_tbf{
+    font-size: 50px;
+  }
+
+  .l_tbf span{
+    color: #26aef2;
+  }
+
+  .g20{
+    gap: 20px;
+    
+  }
+  .aop_label_1, .aop_label_2,.aop_label_3{
+    width: 20%;
+  }
+
+  .aop_info_1,.aop_info_2,.aop_info_3{
+    font-size: 25px;
+    width: 100%;
+  }
+
+  .aop_2,.aop_3{
+    margin-top: 20px;
+  }
+  .owp_img img{
+    width: 100%;
+  }
+
+  .w100{
+    width: 100%;
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+
+  .witbf_label{
+    display: flex;
+    justify-content: center; /* Horizontally center content */
+    align-items: center; /* Vertically center content */
+    
+  }
+
+  .witbf_label div{
+    text-align: center;
+  }
+
+  .imgs img{
+    width: 100%;
+  }
+
+  .imgs{
+    margin: 20px;
+    gap: 5%;
+  }
+
+  .img_label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 40px;
+    padding: 20px;
+    display: flex;
+  justify-content: center; /* Horizontally center content */
+  align-items: center;
+  }
+
+  .img_label div{
+    text-align: center;
+  }
+
+  .about_us img{
+    width: 100%;
+  }
+
+  .about_us{
+    background-color: #737372;
+    font-family: Arial, Helvetica, sans-serif;
+    
+  }
+
+  .about_us a{
+    text-decoration: none;
+    color: white;
+  }
+
+  .au_links{
+    gap: 20px;
+  }
+
+  #goToTopBtn {
+    display: none; /* Hide the button by default */
+    position: fixed; /* Keep the button fixed on the viewport */
+    bottom: 20px;
+    right: 20px;
+    /* background-color: #007bff; */
+    /* color: #fff; */
+    background-color: transparent;
+    border: black solid 1px;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#goToTopBtn:hover {
+    opacity: 0.8;
+    background-color: black;
+    color: white;
+    transition: 0.25s ease-in-out;
+}
