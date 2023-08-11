@@ -24,6 +24,7 @@
 
 body{
     margin: 0;
+    background-color: #737372;
 }
 
 .bg_blue{
@@ -241,7 +242,3 @@ body{
   
 }
 
-body{
-  background-color: #737372;
-  
-}
