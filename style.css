@@ -242,3 +242,38 @@ body{
   
 }
 
+@media screen and (max-width: 767px){
+  .navbar{
+    display: none;
+  }
+  .banner_img{
+    display: none;
+  }
+  .w_i_tbf{
+    display: none;
+  }
+  .up_aop{
+    display: none;
+  }
+  .owp_img{
+    display: none;
+  }
+  .infrastructure{
+    display: none;
+  }
+  .clients{
+    display: none;
+  }
+  .important{
+    display: none;
+  }
+  .about_us{
+    display: none;
+  }
+}
+
+@media screen and (min-width: 767px){
+  .mobile_view{
+    display: none;
+  }
+}
