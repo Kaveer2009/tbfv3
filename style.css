@@ -26,6 +26,7 @@ body{
     margin: 0;
     /* background-color: #737372; */
     background-color: #727276;
+    width: 100%;
 }
 
 .bg_blue{
@@ -269,6 +270,9 @@ body{
     display: none;
   }
   .about_us{
+    display: none;
+  }
+  .three_dt{
     display: none;
   }
 }
