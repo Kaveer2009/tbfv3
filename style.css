@@ -24,7 +24,8 @@
 
 body{
     margin: 0;
-    background-color: #737372;
+    /* background-color: #737372; */
+    background-color: #727276;
 }
 
 .bg_blue{
@@ -277,3 +278,8 @@ body{
     display: none;
   }
 }
+img {
+    pointer-events: none;
+    user-select: none;
+    -webkit-user-drag: none;
+  }

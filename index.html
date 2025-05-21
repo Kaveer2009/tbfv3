@@ -11,6 +11,29 @@
     <link rel="stylesheet" href="mobile.css">
 </head>
 <body>
+  <script>
+  document.addEventListener('contextmenu', event => event.preventDefault());
+  // Disable common dev tools shortcuts
+  document.addEventListener('keydown', event => {
+    if (
+      event.key === 'F12' || 
+      (event.ctrlKey && event.shiftKey && ['I', 'J', 'C'].includes(event.key)) || 
+      (event.ctrlKey && event.key === 'U')
+    ) {
+      event.preventDefault();
+      alert("This action is disabled.");
+    }
+  });
+
+
+  document.addEventListener("keyup", function(e) {
+  if (e.key === "PrintScreen") {
+    navigator.clipboard.writeText("");
+    alert("Screenshots are disabled on this site.");
+  }
+});
+</script>
+
     <nav class="navbar bg_blue">
         <div class="navbar-container">
           <a href="#" class="navbar-logo">
@@ -30,7 +53,7 @@
       <div class="banner_img">
         <img src="images/banner/banner_pic.jpg" alt="loading">
       </div>
-      <div class="w_i_tbf flex bg_dark_gray fw">
+      <!-- <div class="w_i_tbf flex bg_dark_gray fw">
         <div class="witbf_label bg_light_gray p25">
             <div>
                 WHAT IS THE BIGFISH?
@@ -52,8 +75,14 @@ and help organizations succeed. Our 300 people collaborate
 across a network of all cities of India.
             </div>
         </div>
-      </div>
-      <div class="w_i_tbf flex bg_dark_gray fw" id="om">
+      </div> -->
+      
+      <img id="" src="images/mobile view important/1.png" alt="" class="w100 imgs">
+            <img id="om" src="images/mobile view important/2.png" alt="" class="w100 imgs">
+            <img id="" src="images/mobile view important/3.png" alt="" class="w100 imgs">
+
+
+      <!-- <div class="w_i_tbf flex bg_dark_gray fw" id="om">
         <div class="witbf_label bg_light_gray p25">
             <div>
                 OUR MISSION
@@ -71,10 +100,10 @@ share knowledge and image new ways to solve the challenges
 of the built environment.
             </div>
         </div>
-      </div>
+      </div> -->
 
 
-      <div class="up_aop bg_dark_gray fw">
+      <!-- <div class="up_aop bg_dark_gray fw">
         <div class="aop_label"><h2>AREA OF SPECIALIZATION</h2></div>
         <div class="flex g20 aop_1">
             <div class="aop_label_1 bg_light_gray">
@@ -114,7 +143,7 @@ Activations
 Productions, Multiple Cities Overnight Rollouts. 
             </div>
         </div>
-      </div>
+      </div> -->
 
       <div class="owp_img">
         <img src="images/owp/owp.jpg" alt="loading">
