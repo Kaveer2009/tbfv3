@@ -182,7 +182,7 @@ body{
   }
 
   .imgs{
-    margin: 20px;
+    /* margin: 20px; */
     gap: 5%;
   }
 
@@ -226,12 +226,14 @@ body{
     /* background-color: #007bff; */
     /* color: #fff; */
     background-color: transparent;
-    border: black solid 1px;
+    background: #ffffff;
+    border: black solid 0px;
     border-radius: 50%;
     padding: 10px 15px;
     cursor: pointer;
     transition: opacity 0.3s ease-in-out;
 }
+
 
 #goToTopBtn:hover {
     opacity: 0.8;
@@ -239,7 +241,49 @@ body{
     color: white;
     transition: 0.25s ease-in-out;
 }
-
+.allLinksBtn{
+  /* display: none; Hide the button by default */
+    position: fixed; /* Keep the button fixed on the viewport */
+    /* bottom: 10%; */
+    right: 20px;
+    /* background-color: #007bff; */
+    /* color: #fff; */
+    background-color: transparent;
+    border: black solid 0px;
+    border-radius: 50%;
+    /* padding: 10px 10px 10px 10px; */
+    padding: 1%;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+#instagramBtn{
+  background-color: #ee2a7b;
+  color: white;
+  bottom: 10%;
+}
+#instagramBtn:hover{
+    background: #833ab4;
+    color: white;
+    transition: 0.25s ease-in-out;
+}
+#facebookBtn{
+  bottom: 17.5%;
+  background: #1877F2;
+  color: white;
+}
+#facebookBtn:hover{
+  background: #265490;
+  transition: 0.25s ease-in-out;
+}
+#linkedinBtn{
+  background-color: #0077B5;
+  color: white;
+  bottom: 25%;
+}
+#linkedinBtn:hover{
+  background: #003d5d;
+  transition: 0.25s ease-in-out;
+}
 .imgs2{
   
 }
@@ -274,6 +318,13 @@ body{
   }
   .three_dt{
     display: none;
+  }
+  .allLinksBtn{
+    padding: 5%;
+    right: 2.5%;
+  }
+  #goToTopBtn{
+    right: 2.5%;
   }
 }
 
