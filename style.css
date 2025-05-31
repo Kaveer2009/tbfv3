@@ -289,6 +289,9 @@ body{
   .navbar{
     display: none;
   }
+  #x7a9b2{
+    display: none;
+  }
   .banner_img{
     display: none;
   }
@@ -338,3 +341,179 @@ img {
   #myNav{
     font-family: Cosima;
   }
+  
+  /* forum */
+  form {
+    max-width: 500px;
+    margin: 1rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+
+  #submit_forum {
+    background-color: #0a74da;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #095bb5;
+  }
+
+  #x7a9b2 {
+    background-color: #727276;
+    padding: 3rem 1rem;
+    border-radius: 12px;
+    max-width: 520px;
+    margin: 2rem auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .h7f2d4 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  #f5c2e9 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #f5c2e9 input[type="text"],
+  #f5c2e9 input[type="email"],
+  #f5c2e9 textarea {
+    background-color: #5a5a5f;
+    border: none;
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    color: #e0e0e0;
+    resize: vertical;
+    transition: background-color 0.3s ease;
+  }
+
+  #f5c2e9 input[type="text"]::placeholder,
+  #f5c2e9 input[type="email"]::placeholder,
+  #f5c2e9 textarea::placeholder {
+    color: #bbb;
+  }
+
+  #f5c2e9 input[type="text"]:focus,
+  #f5c2e9 input[type="email"]:focus,
+  #f5c2e9 textarea:focus {
+    outline: none;
+    background-color: #6c6c71;
+    color: #fff;
+  }
+
+  #f5c2e9 textarea {
+    min-height: 120px;
+  }
+
+  #b6q1n3 {
+    background: linear-gradient(90deg, #0a74da 0%, #005bb5 100%);
+    color: #fff;
+    border: none;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  #b6q1n3:hover {
+    background: linear-gradient(90deg, #084a8a 0%, #003c70 100%);
+  }
+
+  /* forum end */
+
+  /* mobile forum */
+  #k8m4z1 {
+    background-color: #727276;
+    padding: 3rem 1rem;
+    border-radius: 12px;
+    /* max-width: 520px; */
+    width: 80%;
+    margin: 2rem auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.4);
+    color: #f1f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+  .n5x7v3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 700;
+    font-size: 2rem;
+  }
+
+  #y1w8p6 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  #y1w8p6 input[type="text"],
+  #y1w8p6 input[type="email"],
+  #y1w8p6 textarea {
+    background-color: #5a5a5f;
+    border: none;
+    border-radius: 8px;
+    padding: 0.85rem 1rem;
+    font-size: 1rem;
+    color: #e0e0e0;
+    resize: vertical;
+    transition: background-color 0.3s ease;
+  }
+
+  #y1w8p6 input[type="text"]::placeholder,
+  #y1w8p6 input[type="email"]::placeholder,
+  #y1w8p6 textarea::placeholder {
+    color: #bbb;
+  }
+
+  #y1w8p6 input[type="text"]:focus,
+  #y1w8p6 input[type="email"]:focus,
+  #y1w8p6 textarea:focus {
+    outline: none;
+    background-color: #6c6c71;
+    color: #fff;
+  }
+
+  #y1w8p6 textarea {
+    min-height: 120px;
+  }
+
+  #x2r4n0 {
+    background: linear-gradient(90deg, #0a74da 0%, #005bb5 100%);
+    color: #fff;
+    border: none;
+    padding: 0.9rem 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+
+  #x2r4n0:hover {
+    background: linear-gradient(90deg, #084a8a 0%, #003c70 100%);
+  }
+  /* mobile forum end */
+  
