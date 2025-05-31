@@ -284,9 +284,6 @@ body{
   background: #003d5d;
   transition: 0.25s ease-in-out;
 }
-.imgs2{
-  
-}
 
 @media screen and (max-width: 767px){
   .navbar{
@@ -337,4 +334,7 @@ img {
     pointer-events: none;
     user-select: none;
     -webkit-user-drag: none;
+  }
+  #myNav{
+    font-family: Cosima;
   }
