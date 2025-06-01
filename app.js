@@ -28,3 +28,10 @@ function openNav() {
   function closeNav() {
     document.getElementById("myNav").style.width = "0%";
   }
+  
+//   socail media 
+document.querySelector(".social-fab .trigger").addEventListener('click', (e) => {
+  e.currentTarget.parentElement.classList.toggle("open");
+});
+
+// social media end

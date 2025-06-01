@@ -221,6 +221,7 @@ body{
   #goToTopBtn {
     display: none; /* Hide the button by default */
     position: fixed; /* Keep the button fixed on the viewport */
+    opacity: 0.8;
     bottom: 20px;
     right: 20px;
     /* background-color: #007bff; */
@@ -325,6 +326,10 @@ body{
   }
   #goToTopBtn{
     right: 2.5%;
+    margin-bottom: 20%;
+  }
+  .sm_links{
+    display: none;
   }
 }
 
@@ -517,3 +522,90 @@ img {
   }
   /* mobile forum end */
   
+  /* socaial media */
+  .social-fab menu {
+  --size: 2.5rem;
+  --radius: 6rem;
+  --padding: 1rem;
+  --bg-color: rgba(255, 255, 255, 0.9);
+  --fg-color: rgba(0, 0, 0, 0.7);
+  --hi-color: #c22eff;
+
+  position: fixed;
+  bottom: var(--padding);
+  right: var(--padding);
+  z-index: 9999;
+}
+
+.social-fab menu > * {
+  position: absolute;
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  background: var(--bg-color);
+  color: var(--fg-color);
+  text-decoration: none;
+  box-shadow: 0 0 9px rgba(0, 0, 0, 0.6);
+}
+
+.social-fab menu > .action {
+  --factor: 0;
+  width: var(--size);
+  height: var(--size);
+  right: calc(0.35 * var(--size));
+  bottom: calc(0.35 * var(--size));
+  opacity: 0;
+  transform: rotate(calc(-1 * var(--angle))) translateY(calc(-1 * var(--radius) * var(--factor))) rotate(var(--angle));
+  transition: transform 250ms ease-in-out, opacity 250ms ease-in-out, box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.social-fab menu > .action:hover,
+.social-fab menu > .trigger:hover {
+  color: var(--hi-color);
+  box-shadow: 0 0 0 0.35rem rgba(0, 0, 0, 0.2);
+}
+
+.social-fab menu.open > .action {
+  --factor: 1;
+  opacity: 1;
+}
+
+.social-fab menu > .action:nth-child(1) {
+  --angle: 0deg;
+  transition-delay: 0ms;
+}
+.social-fab menu > .action:nth-child(2) {
+  --angle: 30deg;
+  transition-delay: 50ms;
+}
+.social-fab menu > .action:nth-child(3) {
+  --angle: 60deg;
+  transition-delay: 100ms;
+}
+.social-fab menu > .action:nth-child(4) {
+  --angle: 90deg;
+  transition-delay: 150ms;
+}
+
+.social-fab menu > .trigger {
+  width: calc(1.6 * var(--size));
+  height: calc(1.6 * var(--size));
+  bottom: 0;
+  right: 0;
+  font-size: 2rem;
+  transition: box-shadow 250ms ease-in-out, color 250ms ease-in-out;
+}
+
+.social-fab menu > .trigger > i {
+  transition: transform 250ms ease-in-out;
+}
+
+.social-fab menu.open > .trigger > i {
+  transform: rotate(-135deg);
+}
+
+  /* social media end */
+
+
+  
+
